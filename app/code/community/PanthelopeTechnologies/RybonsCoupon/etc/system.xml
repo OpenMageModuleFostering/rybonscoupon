@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+<config>
+    <tabs>
+        <PanthelopeTechnologies_tab module="RybonsCoupon" translate="label">
+            <label>Rybons Coupon</label>
+            <sort_order>100</sort_order>
+        </PanthelopeTechnologies_tab>
+    </tabs>
+    <sections>
+        <RybonsCoupon module="RybonsCoupon" translate="label">
+            <label>Options</label>
+            <sort_order>200</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <tab>PanthelopeTechnologies_tab</tab>
+            <groups>
+                <PanthelopeTechnologies_group translate="label">
+                    <label>Rybons Coupon Configuration</label>
+                    <comment>Configure your shop with your merchant details</comment>
+                    <sort_order>10</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <PanthelopeTechnologies_merchantKey translate="label">
+                            <label>Merchant Key </label>
+                            <comment>Type in your merchant Key, don't have one? Visit rybons.com.ng or send an email to info@rybons.com.ng</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </PanthelopeTechnologies_merchantKey>
+                        <PanthelopeTechnologies_connectionMode translate="label">
+                            <label>Connection Mode </label>
+                            <comment>Set connection mode. LIVE or DEV</comment>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>60</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                        </PanthelopeTechnologies_connectionMode>                    
+                    </fields>
+                </PanthelopeTechnologies_group>
+            </groups>
+        </RybonsCoupon>
+    </sections>
+    <sections>
+        <sales>
+            <groups>
+                <totals_sort>
+                    <fields>
+                        <RybonsCoupon module="RybonsCoupon" translate="label">
+                            <label>RybonsCoupon Discount</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>5</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </RybonsCoupon>
+                    </fields>
+                </totals_sort>
+            </groups>
+        </sales>
+        <tax translate="label" module="tax">
+            <groups>
+                <classes translate="label">
+                    <fields>
+                        <RybonsCoupon_tax_class translate="label">
+                            <label>RybonsCoupon Tax Class</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_shipping_taxclass</source_model>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </RybonsCoupon_tax_class>
+                    </fields>
+                </classes>
+                <calculation translate="label">
+                    <fields>
+                        <RybonsCoupon_includes_tax translate="label comment">
+                            <label>RybonsCoupon Discount</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>tax/system_config_source_priceType</source_model>
+                            <sort_order>35</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </RybonsCoupon_includes_tax>
+                    </fields>
+                </calculation>
+            </groups>
+        </tax>
+    </sections>
+</config>

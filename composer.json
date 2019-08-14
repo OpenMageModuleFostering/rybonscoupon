@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/RybonsCoupon",
+    "type": "magento-module",
+    "license": "OSL",
+    "homepage": "",
+    "description": "Offer your shoppers discount coupons from Rybons.com.ng. Visit rybons.com.ng to register your store.",
+    "authors": [
+    {
+        "name": "Panthelope Tech",
+        "email": "klipsedeville@gmail.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}
