@@ -1,7 +1,7 @@
 {
-    "name": "OpenMageModuleFostering\/RybonsCoupon",
+    "name": "openmage-module-fostering\/rybonscoupon",
     "type": "magento-module",
-    "license": "OSL",
+    "license": "OSL-3.0",
     "homepage": "",
     "description": "Offer your shoppers discount coupons from Rybons.com.ng. Visit rybons.com.ng to register your store.",
     "authors": [
